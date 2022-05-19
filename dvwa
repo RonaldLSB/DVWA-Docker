@@ -1,0 +1,7 @@
+#!/bin/bash
+docker run --rm -dit -p 80:80 vulnerables/web-dvwa
+echo -e "
+[+] Go to http://127.0.0.1:80 to access the Web Application.
+[+] To stop your docker container follow these steps:
+ ~# sudo docker ps
+ ~# sudo docker stop <container id>\n"           
